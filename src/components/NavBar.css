@@ -10,7 +10,7 @@
     font-size: min(10vw, 15px) ;
     color: black;
 }
-  
+
 a.active {
     background: black;
     color: white;

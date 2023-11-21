@@ -9,11 +9,11 @@ function Home() {
   useEffect(() => {
     fetch("http://localhost:4001/movies")
       .then(resp => resp.json())
-      .then(data => setMovies(data))
+      .then(movie => setMovies(movie))
   }, []);
 
   const movieList = movies.map(movie => {
-    return <MovieCard key={movie.id} />
+    return <MovieCard key={movie.id} id={movie.id} title={movie.title} />
   })
 
   return (
