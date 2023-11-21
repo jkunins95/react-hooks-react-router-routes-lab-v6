@@ -9,15 +9,15 @@ const routes = [
     element: <Home />,
   },
   {
-    path: "/",
+    path: "/movies",
     element: <Movie />,
   },
   {
-    path: "/",
+    path: "/actors",
     element: <Actors />,
   },
   {
-    path: "/",
+    path: "/directors",
     element: <Directors />,
   },
   ];
