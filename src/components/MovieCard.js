@@ -4,8 +4,8 @@ function MovieCard({title}) {
   
   return (
     <article>
-        <h2>{title}</h2>
-        {/* What should go here? */}
+        <h2>{movies.title}</h2>
+        <Link to={`/movie/${movies.title}`}>View Movie</Link>
     </article>
   );
 };
