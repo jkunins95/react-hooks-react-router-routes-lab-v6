@@ -14,7 +14,7 @@ function Directors() {
   const directorList = directors.map(director => {
     return <article key={director.id}>
       <h2>{director.name}</h2>
-      <ul>{director.movies}</ul>
+      <li>{director.movies}</li>
     </article>
   })
 

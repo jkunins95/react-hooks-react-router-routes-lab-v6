@@ -9,13 +9,17 @@ function NavBar() {
           className="nav-link"
         >Home</NavLink>
       <NavLink 
-          to="/directors"
-          className="nav-link"
-        >Directors</NavLink>
-      <NavLink 
           to="/movies"
           className="nav-link"
         >Movies</NavLink>
+        <NavLink 
+          to="/directors"
+          className="nav-link"
+        >Directors</NavLink>
+        <NavLink 
+          to="/actors"
+          className="nav-link"
+        >Actors</NavLink>
     </nav>
     );
 };

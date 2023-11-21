@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 function Movie() {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState([]);
   const params = useParams();
   // console.log(params)
   const movieId = params.id;
@@ -12,7 +12,7 @@ function Movie() {
   useEffect(() => {
     fetch(`http://localhost:4000/movies/${movieId}`)
     .then(resp => resp.json())
-    .then(data => setMovie(data))
+    .then(data => console.log(data))
   }, [movieId])
 
   return (
